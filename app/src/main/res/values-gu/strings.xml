@@ -3,4 +3,10 @@
     <string name="app_name">mewa9350_a1</string>
     <string name="hello_message">Majama!!</string>
     <string name="ButtonText">Hu button chu</string>
+    <string name="login_text">Login karo</string>
+    <string name="login_name">login name in gujarati</string>
+    <string name="password">password in gujarati</string>
+    <string name="radiobutton">Radiobutton in gujarati</string>
+    <string name="checkbox">Checkbox in gujarati</string>
+    <string name="switch_text">aa su kare che?</string>
 </resources>
