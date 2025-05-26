@@ -9,18 +9,21 @@
     android:columnCount="2"
     android:rowCount="2">
 
-    <RadioButton android:text="@string/radiobutton" android:layout_columnWeight="1" android:gravity="fill"
+    <RadioButton android:id="@+id/radioButton"  android:text="@string/radiobutton" android:layout_columnWeight="1" android:gravity="fill"
         tools:ignore="VisualLintButtonSize" />
     <CheckBox android:text="@string/checkbox" android:layout_columnWeight="1" android:gravity="fill"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"
+        android:id="@+id/myCheckbox"/>
 
     <Switch
+        android:id="@+id/mySwitch"
         android:layout_columnWeight="1" android:gravity="fill"
         android:minHeight="48dp"
         android:text="@string/switch_text"
         tools:ignore="UseSwitchCompatOrMaterialXml,VisualLintButtonSize" />
 
     <ImageButton
+        android:id="@+id/imageButton"
         android:layout_columnWeight="1" android:gravity="fill"
         android:importantForAccessibility="no"
         android:src="@android:drawable/ic_menu_camera"

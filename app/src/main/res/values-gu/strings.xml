@@ -9,4 +9,10 @@
     <string name="radiobutton">Radiobutton in gujarati</string>
     <string name="checkbox">Checkbox in gujarati</string>
     <string name="switch_text">aa su kare che?</string>
+    <string name="dialog_message">pakku activity patavi che?</string>
+    <string name="dialog_title">pakku Exit</string>
+    <string name="ok">Ha</string>
+    <string name="cancel">Na</string>
+
+
 </resources>

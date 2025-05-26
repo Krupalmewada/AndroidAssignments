@@ -8,4 +8,9 @@
     <string name="radiobutton">Radiobutton</string>
     <string name="checkbox">Checkbox</string>
     <string name="switch_text">What does this do?</string>
+    <string name="dialog_message">Are you sure you want to finish the activity?</string>
+    <string name="dialog_title">Confirm Exit</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+
 </resources>
