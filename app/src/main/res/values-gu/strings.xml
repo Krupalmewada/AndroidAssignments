@@ -13,6 +13,10 @@
     <string name="dialog_title">pakku Exit</string>
     <string name="ok">Ha</string>
     <string name="cancel">Na</string>
+    <string name="start_chat">start_chat</string>
+    <string name="send">send</string>
+    <string name="Enter_message">Enter message</string>
+
 
 
 </resources>

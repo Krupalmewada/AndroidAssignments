@@ -4,4 +4,9 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+    <!-- Add this inside <resources> -->
+    <style name="Theme.ChatWithActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize if needed -->
+    </style>
+
 </resources>

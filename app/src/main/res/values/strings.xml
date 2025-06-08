@@ -12,5 +12,9 @@
     <string name="dialog_title">Confirm Exit</string>
     <string name="ok">Yes</string>
     <string name="cancel">No</string>
+    <string name="start_chat">start chat</string>
+    <string name="send">send</string>
+    <string name="Enter_message">Enter message</string>
+
 
 </resources>
