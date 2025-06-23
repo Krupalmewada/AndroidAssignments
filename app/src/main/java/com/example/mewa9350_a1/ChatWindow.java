@@ -1,5 +1,5 @@
 package com.example.mewa9350_a1;
-//
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-//
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,18 +27,18 @@ public class ChatWindow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_window);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true); // show back button
-            getSupportActionBar().setTitle("Chat Window"); // set title
-        }
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle("Chat Window");
+        }
 
         ListView listView = findViewById(R.id.list_view);
         textInput = findViewById(R.id.message_input);
         Button sendButton = findViewById(R.id.button_send);
         messages = new ArrayList<>();
 
-        messageAdapter = new ChatAdapter(this);
+        messageAdapter = new ChatAdapter(this, messages);
         listView.setAdapter(messageAdapter);
 
         sendButton.setOnClickListener(v -> {
@@ -51,28 +50,32 @@ public class ChatWindow extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            finish(); // go back to MainActivity
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
     private class ChatAdapter extends ArrayAdapter<String> {
-        public ChatAdapter(Context ctx) {
-            super(ctx, 0);
+        private final ArrayList<String> localMessages;
+
+        public ChatAdapter(Context ctx, ArrayList<String> messages) {
+            super(ctx, 0, messages);
+            this.localMessages = messages;
         }
 
         @Override
         public int getCount() {
-            return messages.size();
+            return localMessages.size();
         }
 
         @Override
         public String getItem(int position) {
-            return messages.get(position);
+            return localMessages.get(position);
         }
 
         @SuppressLint("InflateParams")
